@@ -1,0 +1,17 @@
+{
+    "name": "mariadb-connector",
+    "config": {
+      "connector.class": "io.debezium.connector.mysql.MySqlConnector",
+      "tasks.max": "1",
+      "database.hostname": "mariadb",
+      "database.port": "3306",
+      "database.user": "your_mariadb_user",
+      "database.password": "your_mariadb_password",
+      "database.server.id": "184054",
+      "database.server.name": "localhost",
+      "database.include.list": "db_test_cdc",
+      "table.include.list": "db_test_cdc.tbl_test",
+      "database.history.kafka.bootstrap.servers": "kafka:9092",
+      "database.history.kafka.topic": "schema-changes.db_test_cdc"
+    }
+  }  
